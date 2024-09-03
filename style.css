@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+.logo {
+  position: static;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 25px;
+}
+
+#create {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: blue;  
+}
+
+.top {
+  clear: right;
+  background: repeating-linear-gradient(to right, rgb(123, 255, 0), white);
+  border-radius: 0 40% 40% 0;
+}
+
+.mission {
+  color: orangered;
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration-line: underline overline;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  clear: both;
+  background: repeating-linear-gradient(to left, rgb(123, 255, 0), white);
+}
+
+.tile-image {
+  float: left;
+  height: 200px;
+  border-radius: 0 40% 0 40%;
+  margin: 30px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+  }
+
+  .top {
+    object-fit: contain;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .mission {
+    font-size: 1rem;
+  }
+
+  .tile-image {
+    object-fit: contain;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .left {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+  }
+
+  .right {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+  }
+
+
+}
